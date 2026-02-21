@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    background: linear-gradient(135deg, #ef32d9, #89fffd);
+}
+h1{
+    color: brown;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    margin: 1rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.red{
+background-color: red;
+border-radius: 2rem 2rem 0 2rem;
+}
+.green{
+background-color: green;
+border-radius: 2rem 0 2rem 2rem ;
+}
+.yellow{
+background-color: yellow;
+border-radius: 2rem  2rem 2rem 0;
+}
+.blue{
+background-color: blue;
+border-radius: 0 2rem 2rem  2rem;
+}

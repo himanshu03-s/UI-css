@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* line-height: 30px; */
+}
+
+.main1 {
+  width: 100%;
+  height: 165vh;
+  background-image: url(images/r2_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Mortgages--first page */
+
+.hero img {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
+
+.hero h2 {
+  font-size: 59px;
+  color: white;
+  position: absolute;
+  top: 34vh;
+  left: 41%;
+}
+
+.border1 {
+  width: clamp(40px, 5vw, 120px);
+  height: clamp(20px, 2vw, 40px);
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #eb7124;
+  transition: all .3s ease-in-out;
+  margin-left: 38%;
+
+}
+
+.border2 {
+  width: clamp(40px, 5vw, 120px);
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 0 0;
+  border-color: #eb7124;
+  transition: all .3s ease-in-out;
+  margin: 30px 0 30px 38%;
+}
+ .main-but{
+      position: absolute;
+  top: 65vh;
+  left: 40%;
+  background-color: #fff;
+  color: rgb(38, 38, 76);
+  border: 2px solid rgb(250,250,255);
+  border-radius: 0.8rem;
+  padding: 16px 70px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .7s ease;
+}
+.main-but:hover{
+      background-color:orangered;
+  color:white;
+  border: 2px solid orangered;
+}
+@media (max-width: 767px) {
+.main-but {
+    border: 2px solid #fff6f1;
+    padding: 8px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+  }
+}
+
+/* Mortgage Market in the UK   */
+
+.join-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px;
+  max-width: 100%;
+  height: 80vh;
+  margin-left: 7%;
+  margin-right: 6%;
+}
+
+.content {
+  flex: 1; 
+  width: 100%;
+}
+
+.content h2 {
+  font-size: 2.6rem;
+  color: #0b1044;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.content h2 .border1{
+  margin-left: 13%;
+}
+.content h2 .border2{
+  margin-left: 13%;
+}
+
+.content p {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.image {
+  display: flex;
+  justify-content: right;
+  width: 48%;
+}
+
+.image img {
+  max-width: 80%;
+  padding: 20px;
+  height: 40%;
+  border-radius: 1.2rem;
+}
+
+/* Why Choose Wealthmax For Your Mortgage? */
+
+.why-choose {
+  padding-left: 8%;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /* gap: 60px; */
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.text-content {
+  flex: 1 1 600px;
+  position: absolute;
+  z-index: 500;
+  margin-right: 45%;
+
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  color: #0c1b46;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+.text-content h2 .border1{
+    margin-left: 10%;
+}
+
+.text-content h2 .border2{
+    margin-left: 10%;
+}
+.text-content p {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.image-content {
+  text-align: right;
+  margin-left: 50%;
+}
+
+.image-content img {
+  width: 100%;
+}
+
+/* What We Offer */
+.main2{
+    background-image: url(images/r2_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.why-join {
+  padding: 4rem 1rem;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #001045;
+  margin-bottom: 3rem;
+}
+.section-title .border1{
+    margin-left: 47.5%;
+}
+.section-title .border2{
+    margin-left: 47.5%;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 6% ;
+}
+
+.feature-card {
+  /* height: 350px;
+  width: 360px; */
+  height: 30%;
+  width: 26%;
+  margin-top: 30px;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-box::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff6600;
+  border-radius: 50%;
+}
+
+.feature-card h3 {
+  color: #001045;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.3;
+  padding-bottom: 25px;
+}
+.feature-card a {
+  font-size: 0.90rem;
+  color:orangered;
+  padding-top: 5px;
+  text-decoration: none;
+   font-size: 1.1rem;
+}
+
+/* Why Do I need Mortgage cover? */
+
+/* .mortgage-cover {
+  padding: 60px 20px;
+} */
+ .mortgage-cover.container {
+  max-width: 100%;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap-reverse;
+}
+
+.image-side {
+  flex: 1 1 38%;
+  text-align: center;
+}
+
+.image-side img {
+  width: 80%;
+  height: 75%;
+  /* max-width: 500px; */
+  border-radius: 16px;
+  padding-left: 9%;
+}
+
+.text-side {
+  flex: 1 1 800px;
+  padding-right: 8% ;
+}
+
+.text-side h2 {
+  font-size: 2.5rem;
+  color: #0c1b46;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+.text-side h2 .border1{
+    margin-left: 12%;
+}
+.text-side h2 .border2{
+    margin-left: 12%;
+}
+
+
+.text-side p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.text-side .bold {
+  font-weight: 700;
+  color: #0c1b46;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-side h2 {
+    font-size: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .image-side,
+  .text-side {
+    flex: 1 1 100%;
+  }
+
+  .image-side img {
+    max-width: 100%;
+  }
+}
+
+/* Looking for a Mortgage? */
+
+.mortgage-cta {
+  padding: 60px 20px;
+  text-align: center;
+  /* position: relative; */
+}
+
+ .mortgage-cta.container {
+    text-align: center;
+    align-items: center;
+  /* max-width: 100%;
+  margin: auto;
+  align-items: center; */
+}
+
+.mortgage-cta h2 {
+    /* text-align: center; */
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0c1b46;
+  /* position: absolute; */
+  margin-bottom: 20px;
+  line-height: 1.2;
+ margin-left: 36%;
+  /* display: inline-block; */
+}
+
+.mortgage-cta p {
+  font-size: 1.3rem;
+  margin: 10px 0 30px;
+  color: #333;
+  padding: 0 10% 10px 10%;
+}
+
+.cta-button {
+  background-color: #f36c21;
+  color: #fff;
+  margin-left: 43%;
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  /* display: inline-block; */
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d95d1a;
+    height: 60px;
+    width: 300px;
+    margin-left: 42%;
+     font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .mortgage-cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
